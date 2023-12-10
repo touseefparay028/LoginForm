@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body{
+            font-family: sans-serif ;
+        }
+        .container{
+           background-color: rgb(41, 43, 44);
+            margin: auto;
+            border: 2px solid rgb(9, 8, 8);
+            width: 750px;
+            height: 600px;
+            border-radius: 25px;
+        }
+        .division{
+            
+            padding: 30px;
+            border-radius: 10px;
+            margin: 25px auto;
+            background-color: transparent ;
+            height: 500px;
+          
+            width: 300px;
+            float: left;
+        }
+        .feild{
+            color: WHITE;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 20px;
+            height: 30px;
+            margin-top: 20px ;
+            border: 1px solid white;
+        }
+        #div2{
+            margin-left:5px ;
+        }
+        #div1{
+            color: aliceblue;
+        }
+        h3{
+            color: rgb(3, 110, 105);
+            margin: 25px auto;
+            margin-left: 5px;
+        }
+        #btn{
+            margin-left: 92px;
+            border: 2px solid white;
+            border-radius: 8px;
+            
+        }
+        img{
+            border-radius: 20px;
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+        }
+        #Number::-webkit-outer-spin-button,
+        #Number::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+        }
+        h2{
+            color: darkcyan;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="division" id="div1">
+            <h1>Welcome!</h1>
+           <p> let's know about yourself.</p>
+           <img src="cartoon.jpg" alt="Loading error">
+        </div>
+        <div class="division" id="div2">
+            <h2>Drop Your Details Here</h2>
+            <form action="form">
+                <input class="feild" type="text" id="Name" placeholder="Name" required>
+                <input type="text" placeholder="Address" class="feild" id="Address" required>
+                <input type="text" placeholder="Qualification" class="feild" id="Qualification" required>
+                <input type="number" placeholder="Mobile" class="feild" id="Number" maxlength="10" required>
+               <h3> Gender:   <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female </h3>
+               <button type="submit" id="btn" value="h">Submit</button>
+            </form>  
+        </div>
+    </div>
+
+</body>
+</html>
